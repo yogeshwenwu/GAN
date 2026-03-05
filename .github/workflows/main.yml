@@ -32,7 +32,7 @@ jobs:
 
     - name: Execute notebook
       run: |
-        jupyter nbconvert --to notebook --execute Task_01.ipynb --output notebook_executed.ipynb --allow-errors=false
+        jupyter nbconvert --to notebook --execute Task_01.ipynb --output notebook_executed.ipynb
       
     - name: Upload executed notebook (optional)
       uses: actions/upload-artifact@v4
